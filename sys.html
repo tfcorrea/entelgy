@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="serviço web para apontamento de horas">
+    <meta name="author" content="Tiago Fernandes Corrêa">
+    <title>Teste Entelgy - Tiago F. Corrêa</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style="background-color: #efefef">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html"><img src="img/logo.png" alt="logo" class="img-responsive"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="sys.html">Apontamentos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="relatorios.html">Relatórios</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <div class="clearfix">&nbsp;</div>
+        <div class="clearfix">&nbsp;</div>
+        <div class="clearfix">&nbsp;</div>
+        <div class="clearfix">&nbsp;</div>
+        <div class="clearfix">&nbsp;</div>
+        <div class="container">
+        <h3>Apontamento de horas</h3>
+        <div class="clearfix">&nbsp;</div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                <table class="table table-striped" id="myDataTable">
+                    <thead>
+                        <th>Data</th>
+                        <th>Entrada</th>
+                        <th>Saída almoço</th>
+                        <th>Retorno almoço</th>
+                        <th>Saída</th>
+                        <th>Horas trabalhadas</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr id="fields">
+                            <td >
+                                <div class='input-group'>
+                                    <input type='date' id="data" class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class='input-group'>
+                                    <input type="time" id="chegada" name="" placeholder="Chegada" class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-time"></span>
+                                    </span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class='input-group'>
+                                    <input type="time" id="saida_almoco" placeholder="Saída para almoço" class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-time"></span>
+                                    </span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class='input-group'>
+                                    <input type="time" id="retorno_almoco" placeholder="Retorno do almoço" class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-time"></span>
+                                    </span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class='input-group'>
+                                    <input type="time" id="saida" placeholder="Saída" class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-time"></span>
+                                    </span>
+                                </div>
+                            </td>
+                            <td>
+                                <h4 id="horas_trabalhadas" ></h4>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-success" id="botao"  disabled="true">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                <button type="button" class="btn btn-info" id="editar"  style="display: none;" onclick="editarApontamento()">
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                </button>  
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5" class="text-right">
+                                <h5>Total de horas apontadas</h5>
+                            </td>
+                            <td colspan="2">
+                                <h4 id="totalGeral"></h4>
+                            </td>
+                        </tr> 
+                    </tfoot>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

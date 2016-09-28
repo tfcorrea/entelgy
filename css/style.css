@@ -1,0 +1,24 @@
+.navbar-default{
+	border: 0 none;
+}
+ul.nav.navbar-nav.navbar-right{
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.btn-outline{
+	color: #fff;
+	background-color: transparent;
+	border: solid 1px #fff;
+}
+.btn-outline:hover{
+	color: #F05F40;
+	text-shadow: none;
+	background-color: #fff;
+	border-color: #fff
+}
+.input-outline{
+	color: #fff;
+	background-color: transparent;
+	border: solid 2px #fff;
+}
+
